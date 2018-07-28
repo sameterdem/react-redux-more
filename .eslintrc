@@ -1,16 +1,21 @@
-{   "parser": "babel-eslint",
-    "extends": "airbnb",
-    "env": {
-        "browser": true,
-        "jest": true
-    },
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import"
-    ],
-    "rules": {
-        "no-console": "off",
-        "react/jsx-filename-extension": "off"
-    }
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["react", "jsx-a11y", "import", "prettier"],
+  "rules": {
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "printWidth": 100
+      }
+    ]
+  }
 }
