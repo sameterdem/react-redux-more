@@ -8,7 +8,7 @@ sudo: false
 cache: yarn
 
 script:
-  - yarn run test
+  - yarn run test:ci
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.21.3
