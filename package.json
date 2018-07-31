@@ -13,8 +13,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:eslint": "eslint .",
-    "lint:stylelint:css": "stylelint 'src/**/*.css'",
-    "lint:stylelint:sass": "stylelint 'src/**/*.sass'"
+    "lint:stylelint": "stylelint 'src/**/*.css' && stylelint 'src/**/*.sass'; exit 0",
+    "lint": "yarn run lint:stylelint && yarn run lint:eslint"
   },
   "browserslist": {
     "development": [
