@@ -10,6 +10,9 @@ cache: yarn
 script:
   - yarn run test:ci
 
+after_success:
+  - codecov
+
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.21.3
 
