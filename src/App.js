@@ -1,7 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import logo from './logo.svg';
-import './App.css';
+import logo from 'logo.svg';
+import 'App.css';
 
 const App = () => (
   <div className="App">
