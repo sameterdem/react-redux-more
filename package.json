@@ -27,8 +27,7 @@
     "postcoverage": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80",
     "eject": "react-scripts eject",
     "lint:eslint": "eslint .",
-    "lint:stylelint": "stylelint 'src/**/*.css' && stylelint 'src/**/*.sass'; exit 0",
-    "lint": "yarn run lint:stylelint && yarn run lint:eslint",
+    "lint": "yarn run lint:eslint",
     "format": "prettier --print-width=100 --tab-width=2 --use-tabs=false --semi --single-quote --bracket-spacing --trailing-comma=es5 --write \"src/**/*.js\"",
     "lint-staged": "lint-staged"
   },
@@ -67,7 +66,6 @@
     "pre-commit": "^1.2.2",
     "prettier": "^1.13.7",
     "sass-loader": "^7.1.0",
-    "stylelint": "^9.4.0",
     "stylelint-config-standard": "^18.2.0"
   }
 }
