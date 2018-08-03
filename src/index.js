@@ -14,8 +14,6 @@ const history = createBrowserHistory();
 // Store
 const store = configureStore(undefined, history);
 
-console.log(store.getState());
-
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>

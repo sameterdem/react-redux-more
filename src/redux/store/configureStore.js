@@ -33,6 +33,15 @@ const configureStore = (initialState, history) => {
   // Store
   const store = createStore(connectRouter(history)(rootReducer), initialState, composedEnhancers);
 
+  /* istanbul ignore if */
+  if (process.env.NODE_ENV === 'development' && module.hot) {
+    module.hot.accept('../reducers', () => {
+      // eslint-disable-next-line
+      const nextRootReducer = require('../reducers').default;
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+
   return store;
 };
 
